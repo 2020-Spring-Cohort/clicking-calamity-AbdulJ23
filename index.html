@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Project</title>
-</head>
-<body>
-    <div class="container">
-        <div class="anchor"></div>
-    </div>
-    <script src="/src/app.js"></script>
-</body>
+<html>
+    <head>
+        <h1>
+        <center><span id= "total"> 0</span></center>
+        </h1>
+
+
+
+
+    </head>
+    <body>
+        <img src= "Cookie-PNG.png" onclick="add()"
+        >
+    </body>
+<script>
+    var a=0;
+    var b=1;
+    function add() {
+        a=a+b;
+        document.getElementById("total").innerHTML=a;
+
+    }
+    
+    setInterval(function() {
+        a=a+b;
+        document.getElementById("total").innerHTML=a;
+    }, 1000)
+
+</script>
+<style>
+    body {
+        background-color: darkgray;
+    }
+    center {
+        color:darkseagreen
+    }
+
+
+</style>
+
+
+
+
+
 </html>
